@@ -13,6 +13,7 @@
 		299ED88E2612565B004A517D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299ED88D2612565B004A517D /* Preview Assets.xcassets */; };
 		299ED8992612565B004A517D /* AnimExtremeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299ED8982612565B004A517D /* AnimExtremeTests.swift */; };
 		299ED8A42612565B004A517D /* AnimExtremeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299ED8A32612565B004A517D /* AnimExtremeUITests.swift */; };
+		299ED8C626127239004A517D /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299ED8C526127239004A517D /* Schedule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		299ED89F2612565B004A517D /* AnimExtremeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimExtremeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		299ED8A32612565B004A517D /* AnimExtremeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimExtremeUITests.swift; sourceTree = "<group>"; };
 		299ED8A52612565B004A517D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		299ED8C526127239004A517D /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				299ED88A2612565B004A517D /* Assets.xcassets */,
 				299ED88F2612565B004A517D /* Info.plist */,
 				299ED88C2612565B004A517D /* Preview Content */,
+				299ED8C526127239004A517D /* Schedule.swift */,
 			);
 			path = AnimExtreme;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				299ED8C626127239004A517D /* Schedule.swift in Sources */,
 				299ED88926125657004A517D /* ContentView.swift in Sources */,
 				299ED88726125657004A517D /* AnimExtremeApp.swift in Sources */,
 			);
