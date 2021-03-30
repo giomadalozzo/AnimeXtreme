@@ -25,30 +25,24 @@ struct ScheduleDay: View {
             
             Spacer()
             
-            Text("botão")
-                .font(.system(size: 16))
-                .fontWeight(.regular)
-                .foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
-        }.padding(.top, 51).padding(.bottom, 27)
+            NavigationLink (destination: EventList(eventList: events)){
+                HStack{
+                    Text("Ver Tudo")
+                        .font(.system(size: 16))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
+                    Image(systemName: "chevron.right").foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0)).font(.system(size: 16))
+                }.ignoresSafeArea()
+            }
+        }.padding(.bottom, 27)
         ScrollView(.horizontal){
             HStack(spacing: 14){
-                //AQUI ENTRA OS MÓDULOS DE EVENTO
                 ForEach(events, id: \.id) { event in
                     EventInfo(event: event)
                 }
-                EventInfo(event: events[0])
-                Text("evento1")
-                    .font(.system(size: 16))
-                    .fontWeight(.regular)
-                    .foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
-                Text("evento2")
-                    .font(.system(size: 16))
-                    .fontWeight(.regular)
-                    .foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
-                //ATÉ AQUI
             }
-        }
-        Spacer()
+        }.padding(.bottom, 38)
+
     }
 }
 

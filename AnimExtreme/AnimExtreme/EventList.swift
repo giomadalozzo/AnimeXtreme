@@ -19,6 +19,7 @@ struct EventList: View {
         ZStack {
             Color.black
                 .ignoresSafeArea()
+            
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 14) {
                     ForEach(eventList, id: \.id) { event in

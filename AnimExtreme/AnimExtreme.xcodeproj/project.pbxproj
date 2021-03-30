@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		292A8D4726139C0C0046DDD8 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292A8D4626139C0C0046DDD8 /* ScheduleView.swift */; };
+		297B467E2613C12700DB1D63 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297B467D2613C12700DB1D63 /* TabBar.swift */; };
 		299ED88726125657004A517D /* AnimExtremeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299ED88626125657004A517D /* AnimExtremeApp.swift */; };
 		299ED88926125657004A517D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299ED88826125657004A517D /* ContentView.swift */; };
 		299ED88B2612565B004A517D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299ED88A2612565B004A517D /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		292A8D4626139C0C0046DDD8 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		297B467D2613C12700DB1D63 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		299ED88326125657004A517D /* AnimExtreme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimExtreme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		299ED88626125657004A517D /* AnimExtremeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimExtremeApp.swift; sourceTree = "<group>"; };
 		299ED88826125657004A517D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,10 +116,10 @@
 				C05739C926125D5A00DFE4FB /* RoundedImage.swift */,
 				C05739CE261260A600DFE4FB /* EventInfo.swift */,
 				C05739E72612653D00DFE4FB /* GuestInfo.swift */,
-				299ED8C526127239004A517D /* Schedule.swift */,
 				C0A31F07261398B2006F3B03 /* EventList.swift */,
 				299ED8C526127239004A517D /* ScheduleDay.swift */,
 				292A8D4626139C0C0046DDD8 /* ScheduleView.swift */,
+				297B467D2613C12700DB1D63 /* TabBar.swift */,
 				C05739D8261262DE00DFE4FB /* Resources */,
 				299ED88A2612565B004A517D /* Assets.xcassets */,
 				299ED88F2612565B004A517D /* Info.plist */,
@@ -298,6 +300,7 @@
 				292A8D4726139C0C0046DDD8 /* ScheduleView.swift in Sources */,
 				299ED88726125657004A517D /* AnimExtremeApp.swift in Sources */,
 				C05739D4261262D800DFE4FB /* AppData.swift in Sources */,
+				297B467E2613C12700DB1D63 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

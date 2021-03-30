@@ -18,6 +18,7 @@ struct EventInfo: View {
                 Text(event.name)
                     .bold()
                     .multilineTextAlignment(.center)
+                    .lineLimit(1)
                 Text(event.time)
             }
             .font(.system(size: 14))
