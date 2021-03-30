@@ -21,6 +21,13 @@ struct Guest: Identifiable {
     var imgName: String
 }
 
+struct ScheduleInfo: Identifiable {
+    var id: Int
+    var date: String
+    var weekDate: String
+}
+
 
 var events: [Event] = [(Event(id: 001, name: "PlaceHolder", time: "14h", imgName: "placeHolder"))]
 var guests: [Guest] = [(Guest(id: 001, name: "PlaceHolder", info: "Info about guest", imgName: "placeHolder"))]
+var scheduleDays: [ScheduleInfo] = [(ScheduleInfo(id: 001, date: "16/10", weekDate: "Sábado")), (ScheduleInfo(id: 002, date: "17/10", weekDate: "Domingo"))]
