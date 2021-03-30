@@ -54,6 +54,6 @@ struct ScheduleDay: View {
 
 struct Schedule_Previews: PreviewProvider {
     static var previews: some View {
-        ScheduleDay()
+        ScheduleDay(scheduleDay: scheduleDays[0])
     }
 }
