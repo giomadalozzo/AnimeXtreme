@@ -22,6 +22,7 @@ struct EventInfo: View {
             .font(.system(size: 14))
             .foregroundColor(Color.init(red: 90/255, green: 237/255, blue: 164/255))
         }
+        .padding(.all, 0)
     }
 }
 
