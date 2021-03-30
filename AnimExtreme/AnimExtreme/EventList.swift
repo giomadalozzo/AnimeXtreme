@@ -16,10 +16,14 @@ struct EventList: View {
     ]
     
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: columns, spacing: 14) {
-                ForEach(eventList, id: \.id) { event in
-                    EventInfo(event: event)
+        ZStack {
+            Color.black
+                .ignoresSafeArea()
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 14) {
+                    ForEach(eventList, id: \.id) { event in
+                        EventInfo(event: event)
+                    }
                 }
             }
         }

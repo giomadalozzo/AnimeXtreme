@@ -17,17 +17,18 @@ struct EventInfo: View {
             Group {
                 Text(event.name)
                     .bold()
+                    .multilineTextAlignment(.center)
                 Text(event.time)
             }
             .font(.system(size: 14))
             .foregroundColor(Color.init(red: 90/255, green: 237/255, blue: 164/255))
         }
-        .padding(.all, 0)
+        .frame(width: 158, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
     }
 }
 
 struct EventInfo_Previews: PreviewProvider {
     static var previews: some View {
-        EventInfo(event: events[0])
+        EventInfo(event: events[4])
     }
 }
