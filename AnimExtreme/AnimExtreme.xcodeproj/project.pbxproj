@@ -21,6 +21,8 @@
 		C05739D4261262D800DFE4FB /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05739D3261262D800DFE4FB /* AppData.swift */; };
 		C05739E82612653D00DFE4FB /* GuestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05739E72612653D00DFE4FB /* GuestInfo.swift */; };
 		C0A31F08261398B2006F3B03 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A31F07261398B2006F3B03 /* EventList.swift */; };
+		C0DB791C2614E29800510BBA /* GuestDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DB791B2614E29800510BBA /* GuestDetails.swift */; };
+		C0DB792C2614EEF400510BBA /* GuestList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DB792B2614EEF400510BBA /* GuestList.swift */; };
 		F1D0A2A326143779002573BE /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0A2A126143779002573BE /* PagerView.swift */; };
 		F1D0A2A426143779002573BE /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0A2A226143779002573BE /* OnboardView.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		C05739D3261262D800DFE4FB /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		C05739E72612653D00DFE4FB /* GuestInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestInfo.swift; sourceTree = "<group>"; };
 		C0A31F07261398B2006F3B03 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		C0DB791B2614E29800510BBA /* GuestDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestDetails.swift; sourceTree = "<group>"; };
+		C0DB792B2614EEF400510BBA /* GuestList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestList.swift; sourceTree = "<group>"; };
 		F1D0A2A126143779002573BE /* PagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
 		F1D0A2A226143779002573BE /* OnboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +127,8 @@
 				C05739CE261260A600DFE4FB /* EventInfo.swift */,
 				C05739E72612653D00DFE4FB /* GuestInfo.swift */,
 				C0A31F07261398B2006F3B03 /* EventList.swift */,
+				C0DB791B2614E29800510BBA /* GuestDetails.swift */,
+				C0DB792B2614EEF400510BBA /* GuestList.swift */,
 				299ED8C526127239004A517D /* ScheduleDay.swift */,
 				292A8D4626139C0C0046DDD8 /* ScheduleView.swift */,
 				297B467D2613C12700DB1D63 /* TabBar.swift */,
@@ -305,7 +311,9 @@
 				C0A31F08261398B2006F3B03 /* EventList.swift in Sources */,
 				C05739CA26125D5A00DFE4FB /* RoundedImage.swift in Sources */,
 				299ED88926125657004A517D /* ContentView.swift in Sources */,
+				C0DB792C2614EEF400510BBA /* GuestList.swift in Sources */,
 				292A8D4726139C0C0046DDD8 /* ScheduleView.swift in Sources */,
+				C0DB791C2614E29800510BBA /* GuestDetails.swift in Sources */,
 				299ED88726125657004A517D /* AnimExtremeApp.swift in Sources */,
 				C05739D4261262D800DFE4FB /* AppData.swift in Sources */,
 				297B467E2613C12700DB1D63 /* TabBar.swift in Sources */,

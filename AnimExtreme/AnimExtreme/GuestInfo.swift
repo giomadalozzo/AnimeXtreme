@@ -9,29 +9,24 @@ import SwiftUI
 
 struct GuestInfo: View {
     var guest: Guest
+    var width: CGFloat
+    var height: CGFloat
     
     var body: some View {
         VStack (alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 0) {
             ZStack {
-                RoundedImage(imageName: guest.imgName)
+                RoundedImage(imageName: guest.imgName, imgWidth: width, imgHeight: height)
                     .padding(.bottom, 9)
-                Text("test")
+                Text(guest.name)
                     .foregroundColor(Color.init(red: 90/255, green: 237/255, blue: 164/255))
                     .multilineTextAlignment(.center)
-                    .frame(width: 158, height: 45)
+                    .frame(width: width, height: 45)
                     .background(RoundedCorners(tl: 0, tr: 0, bl: 10, br: 10).fill(Color.init(red: 41/255, green:41/255, blue: 44/255)))
                     .cornerRadius(1)
-                    .frame(height: 183, alignment: .bottom)
+                    .frame(height: height, alignment: .bottom)
             }
-            Group {
-                Text(guest.name)
-                    .bold()
-                Text(guest.info)
-            }
-            .font(.system(size: 14))
-            .foregroundColor(Color.init(red: 90/255, green: 237/255, blue: 164/255))
         }
-        .frame(width: 158, height: 183)
+        .frame(width: width, height: height)
     }
 }
 
@@ -76,6 +71,6 @@ struct RoundedCorners: Shape {
 
 struct GuestInfo_Previews: PreviewProvider {
     static var previews: some View {
-        GuestInfo(guest: guests[0])
+        GuestInfo(guest: guests[0], width: 158, height: 183)
     }
 }

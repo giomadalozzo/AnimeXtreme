@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        GuestInfo(guest: guests[0])
+        Text("Hello World")
     }
 }
 

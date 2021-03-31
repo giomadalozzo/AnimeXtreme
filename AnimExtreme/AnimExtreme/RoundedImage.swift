@@ -9,17 +9,19 @@ import SwiftUI
 
 struct RoundedImage: View {
     var imageName: String
+    var imgWidth: CGFloat
+    var imgHeight: CGFloat
     
     var body: some View {
         Image(imageName)
             .resizable()
-            .frame(width: 158, height: 183)
+            .frame(width: imgWidth, height: imgHeight)
             .cornerRadius(10)
     }
 }
 
 struct RoundedImage_Previews: PreviewProvider {
     static var previews: some View {
-        RoundedImage(imageName: "placeHolder")
+        RoundedImage(imageName: "placeHolder", imgWidth: 158, imgHeight: 183)
     }
 }

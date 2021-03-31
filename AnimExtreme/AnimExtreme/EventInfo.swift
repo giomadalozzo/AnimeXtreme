@@ -12,7 +12,7 @@ struct EventInfo: View {
     
     var body: some View {
         VStack (alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 0) {
-            RoundedImage(imageName: event.imgName)
+            RoundedImage(imageName: event.imgName, imgWidth: 158, imgHeight: 183)
                 .padding(.bottom, 9)
             Group {
                 Text(event.name)

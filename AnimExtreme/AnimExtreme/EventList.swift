@@ -20,10 +20,18 @@ struct EventList: View {
             Color.black
                 .ignoresSafeArea()
             
-            ScrollView {
-                LazyVGrid(columns: columns, spacing: 14) {
-                    ForEach(eventList, id: \.id) { event in
-                        EventInfo(event: event)
+            VStack(alignment: .leading){
+                HStack{
+                    Image("Logo")
+                        .frame(width: 85.0, height: 45.0)
+                }.padding([.top, .bottom], 34.0).padding(.leading, 22)
+                
+                ScrollView {
+                    LazyVGrid(columns: columns, spacing: 14) {
+                        ForEach(eventList, id: \.id) { event in
+                            EventInfo(event: event)
+                                .padding([.leading, .trailing], 20)
+                        }
                     }
                 }
             }
