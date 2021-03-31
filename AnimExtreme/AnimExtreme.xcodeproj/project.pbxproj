@@ -21,6 +21,8 @@
 		C05739D4261262D800DFE4FB /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05739D3261262D800DFE4FB /* AppData.swift */; };
 		C05739E82612653D00DFE4FB /* GuestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05739E72612653D00DFE4FB /* GuestInfo.swift */; };
 		C0A31F08261398B2006F3B03 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A31F07261398B2006F3B03 /* EventList.swift */; };
+		F1D0A2A326143779002573BE /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0A2A126143779002573BE /* PagerView.swift */; };
+		F1D0A2A426143779002573BE /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0A2A226143779002573BE /* OnboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		C05739D3261262D800DFE4FB /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		C05739E72612653D00DFE4FB /* GuestInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestInfo.swift; sourceTree = "<group>"; };
 		C0A31F07261398B2006F3B03 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		F1D0A2A126143779002573BE /* PagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
+		F1D0A2A226143779002573BE /* OnboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				299ED88626125657004A517D /* AnimExtremeApp.swift */,
+				F1D0A2A226143779002573BE /* OnboardView.swift */,
+				F1D0A2A126143779002573BE /* PagerView.swift */,
 				299ED88826125657004A517D /* ContentView.swift */,
 				C05739C926125D5A00DFE4FB /* RoundedImage.swift */,
 				C05739CE261260A600DFE4FB /* EventInfo.swift */,
@@ -292,8 +298,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				299ED8C626127239004A517D /* ScheduleDay.swift in Sources */,
+				F1D0A2A326143779002573BE /* PagerView.swift in Sources */,
 				C05739E82612653D00DFE4FB /* GuestInfo.swift in Sources */,
 				C05739CF261260A600DFE4FB /* EventInfo.swift in Sources */,
+				F1D0A2A426143779002573BE /* OnboardView.swift in Sources */,
 				C0A31F08261398B2006F3B03 /* EventList.swift in Sources */,
 				C05739CA26125D5A00DFE4FB /* RoundedImage.swift in Sources */,
 				299ED88926125657004A517D /* ContentView.swift in Sources */,
