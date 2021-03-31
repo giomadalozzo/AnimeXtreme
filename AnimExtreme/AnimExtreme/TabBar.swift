@@ -23,7 +23,7 @@ struct TabBar: View {
                     case  .shops:
                         Text("Lojas")
                     case .guests:
-                        Text("Convidados")
+                        GuestList()
                     }
                     Spacer()
                     HStack{

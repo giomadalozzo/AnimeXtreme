@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct EventList: View {
+    @Environment(\.presentationMode) var presentation
     var eventList: [Event]
     
     let columns = [
@@ -21,10 +22,26 @@ struct EventList: View {
                 .ignoresSafeArea()
             
             VStack(alignment: .leading){
-                HStack{
-                    Image("Logo")
-                        .frame(width: 85.0, height: 45.0)
-                }.padding([.top, .bottom], 34.0).padding(.leading, 22)
+                
+                Button(action: {
+                    presentation.wrappedValue.dismiss()
+                }, label: {
+                    HStack{
+                        Image(systemName: "chevron.left").foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
+                        Text("Voltar").foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
+                        Spacer()
+                        Text("Dia")
+                            .font(.system(size: 18))
+                            .fontWeight(.bold)
+                            .foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
+                        
+                        Text("data")
+                            .font(.system(size: 14))
+                            .fontWeight(.regular)
+                            .foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
+                            .padding(.top, 5)
+                    }
+                }).padding(.leading, 27).padding(.trailing, 27).padding(.bottom, 20)
                 
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 14) {
@@ -35,6 +52,9 @@ struct EventList: View {
                     }
                 }
             }
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading: Image("Logo"))
+            
         }
     }
 }
