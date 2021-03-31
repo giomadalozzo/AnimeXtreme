@@ -13,6 +13,7 @@ struct ScheduleView: View {
             ZStack{
                 Color.black
                     .ignoresSafeArea()
+                VStack{
                 VStack(alignment: .leading){
                     HStack{
                         Image("Logo")
@@ -26,7 +27,8 @@ struct ScheduleView: View {
                     
                     
                 }.padding(.leading, 22).padding(.trailing, 20).ignoresSafeArea().navigationBarHidden(true).navigationBarTitle("")
-                
+
+                }.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 
             }
         }

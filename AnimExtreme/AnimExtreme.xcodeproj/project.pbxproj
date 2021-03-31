@@ -16,6 +16,7 @@
 		299ED8992612565B004A517D /* AnimExtremeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299ED8982612565B004A517D /* AnimExtremeTests.swift */; };
 		299ED8A42612565B004A517D /* AnimExtremeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299ED8A32612565B004A517D /* AnimExtremeUITests.swift */; };
 		299ED8C626127239004A517D /* ScheduleDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299ED8C526127239004A517D /* ScheduleDay.swift */; };
+		29F7A62E2614F4E300D7B886 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F7A62D2614F4E300D7B886 /* ViewRouter.swift */; };
 		C05739CA26125D5A00DFE4FB /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05739C926125D5A00DFE4FB /* RoundedImage.swift */; };
 		C05739CF261260A600DFE4FB /* EventInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05739CE261260A600DFE4FB /* EventInfo.swift */; };
 		C05739D4261262D800DFE4FB /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05739D3261262D800DFE4FB /* AppData.swift */; };
@@ -60,6 +61,7 @@
 		299ED8A32612565B004A517D /* AnimExtremeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimExtremeUITests.swift; sourceTree = "<group>"; };
 		299ED8A52612565B004A517D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		299ED8C526127239004A517D /* ScheduleDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDay.swift; sourceTree = "<group>"; };
+		29F7A62D2614F4E300D7B886 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		C05739C926125D5A00DFE4FB /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		C05739CE261260A600DFE4FB /* EventInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfo.swift; sourceTree = "<group>"; };
 		C05739D3261262D800DFE4FB /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				299ED8C526127239004A517D /* ScheduleDay.swift */,
 				292A8D4626139C0C0046DDD8 /* ScheduleView.swift */,
 				297B467D2613C12700DB1D63 /* TabBar.swift */,
+				29F7A62D2614F4E300D7B886 /* ViewRouter.swift */,
 				C05739D8261262DE00DFE4FB /* Resources */,
 				299ED88A2612565B004A517D /* Assets.xcassets */,
 				299ED88F2612565B004A517D /* Info.plist */,
@@ -306,6 +309,7 @@
 				299ED8C626127239004A517D /* ScheduleDay.swift in Sources */,
 				F1D0A2A326143779002573BE /* PagerView.swift in Sources */,
 				C05739E82612653D00DFE4FB /* GuestInfo.swift in Sources */,
+				29F7A62E2614F4E300D7B886 /* ViewRouter.swift in Sources */,
 				C05739CF261260A600DFE4FB /* EventInfo.swift in Sources */,
 				F1D0A2A426143779002573BE /* OnboardView.swift in Sources */,
 				C0A31F08261398B2006F3B03 /* EventList.swift in Sources */,
