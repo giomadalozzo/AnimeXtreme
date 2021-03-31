@@ -6,14 +6,25 @@
 //
 
 import SwiftUI
+let coloredNavAppearance = UINavigationBarAppearance()
 
 struct GuestList: View {
-    var guestList: [Guest]
+    var guestList: [Guest] = guests
     
     let columns = [
         GridItem(.fixed(158), spacing: 16),
         GridItem(.fixed(158), spacing: 16)
     ]
+    
+    init(){
+        coloredNavAppearance.configureWithOpaqueBackground()
+        coloredNavAppearance.backgroundColor = UIColor.black
+        coloredNavAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        coloredNavAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+        UINavigationBar.appearance().standardAppearance = coloredNavAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = coloredNavAppearance
+    }
     
     var body: some View {
         NavigationView {
@@ -31,7 +42,7 @@ struct GuestList: View {
                             ForEach(guestList, id: \.id) { guest in
                                 NavigationLink (destination: GuestDetails(guest: guest)){
                                     GuestInfo(guest: guest, width: 158, height: 183)
-                                        .padding([.leading, .trailing], 20)
+                                        .padding([.leading, .trailing], 20).padding(.bottom, 37)
                                 }
                             }
                         }
@@ -40,15 +51,13 @@ struct GuestList: View {
             }
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
-            .navigationBarTitle("a")
-                .foregroundColor(.white)
-                .font(.title)
+            .navigationBarItems(leading: Image("Logo"))
         }
     }
 }
 
 struct GuestList_Previews: PreviewProvider {
     static var previews: some View {
-        GuestList(guestList: guests)
+        GuestList()
     }
 }

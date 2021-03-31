@@ -21,7 +21,7 @@ struct GuestDetails: View {
                     .foregroundColor(Color.init(red: 90/255, green: 237/255, blue: 164/255))
                     .padding([.leading, .trailing], 20)
             }
-        }.navigationBarHidden(true).navigationBarTitle("Voltar")
+        }
     }
 }
 
