@@ -12,9 +12,9 @@ struct OnboardView: View {
     var title : String
     var description : String
     var buttonStatus: Bool
+    @EnvironmentObject private var viewRouter: ViewRouter
     
     var body: some View {
-        
         ZStack {
             if (!buttonStatus) {
                 Image(asset)
@@ -48,10 +48,8 @@ struct OnboardView: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(.black)
                     .padding(.top)
-                
-                
                 Button(action: {
-                    
+                    self.viewRouter.defaultPage = "initialView"
                 }) {
                     Text("Entendi!")
                         .frame(width: 149.0, height: 58.0)
@@ -65,8 +63,6 @@ struct OnboardView: View {
                         .padding(.top, 534)
                 }
                 .contentShape(Rectangle())
-                //     }
-                
                 
             }
         }

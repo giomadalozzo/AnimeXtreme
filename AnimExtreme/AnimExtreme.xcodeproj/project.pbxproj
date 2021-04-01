@@ -24,6 +24,7 @@
 		C0A31F08261398B2006F3B03 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A31F07261398B2006F3B03 /* EventList.swift */; };
 		C0DB791C2614E29800510BBA /* GuestDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DB791B2614E29800510BBA /* GuestDetails.swift */; };
 		C0DB792C2614EEF400510BBA /* GuestList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DB792B2614EEF400510BBA /* GuestList.swift */; };
+		F1BF89BF26152AE5001557AC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BF89BE26152AE5001557AC /* SplashView.swift */; };
 		F1D0A2A326143779002573BE /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0A2A126143779002573BE /* PagerView.swift */; };
 		F1D0A2A426143779002573BE /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0A2A226143779002573BE /* OnboardView.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		C0A31F07261398B2006F3B03 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
 		C0DB791B2614E29800510BBA /* GuestDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestDetails.swift; sourceTree = "<group>"; };
 		C0DB792B2614EEF400510BBA /* GuestList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestList.swift; sourceTree = "<group>"; };
+		F1BF89BE26152AE5001557AC /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		F1D0A2A126143779002573BE /* PagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
 		F1D0A2A226143779002573BE /* OnboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +123,7 @@
 		299ED88526125657004A517D /* AnimExtreme */ = {
 			isa = PBXGroup;
 			children = (
+				F1BF89BE26152AE5001557AC /* SplashView.swift */,
 				299ED88626125657004A517D /* AnimExtremeApp.swift */,
 				F1D0A2A226143779002573BE /* OnboardView.swift */,
 				F1D0A2A126143779002573BE /* PagerView.swift */,
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				299ED8C626127239004A517D /* ScheduleDay.swift in Sources */,
+				F1BF89BF26152AE5001557AC /* SplashView.swift in Sources */,
 				F1D0A2A326143779002573BE /* PagerView.swift in Sources */,
 				C05739E82612653D00DFE4FB /* GuestInfo.swift in Sources */,
 				29F7A62E2614F4E300D7B886 /* ViewRouter.swift in Sources */,

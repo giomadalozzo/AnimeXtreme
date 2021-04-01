@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct PagerView : View {
-    
+
     init() {
         UIPageControl.appearance().currentPageIndicatorTintColor = .black
         UIPageControl.appearance().pageIndicatorTintColor = UIColor.black.withAlphaComponent(0.2)
     }
-    
     
     var body: some View {
         ZStack {
