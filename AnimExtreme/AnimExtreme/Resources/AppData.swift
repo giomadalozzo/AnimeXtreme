@@ -41,11 +41,11 @@ var guests: [Guest] = [(Guest(id: 001, name: "Mandy Candy", info: "Info about gu
                        (Guest(id: 004, name: "Kim Rosacuca", info: "Info about guest", imgSmallName: "kimRosacucaSmall", imgBigName: "kimRosacucaBig")),
                        (Guest(id: 005, name: "Morimura", info: "Info about guest", imgSmallName: "morimuraSmall", imgBigName: "morimuraBig")),
                        (Guest(id: 006, name: "Luba Tv", info: "Info about guest", imgSmallName: "lubaTVSmall", imgBigName: "lubaTVBig"))]
-var scheduleDays: [ScheduleInfo] = [(ScheduleInfo(id: 001, date: "(16/10)", weekDate: "Sábado")), (ScheduleInfo(id: 002, date: "(17/10)", weekDate: "DoSmallgo"))]
+var scheduleDays: [ScheduleInfo] = [(ScheduleInfo(id: 001, date: "(16/10)", weekDate: "Sábado")), (ScheduleInfo(id: 002, date: "(17/10)", weekDate: "Domingo"))]
 
 var shops: [Shop] = [Shop(id: 01, name: "Kitten", imgName: "shopKitten"),
                      Shop(id: 02, name: "Anime Play", imgName: "shopAnimePlay"),
-                     Shop(id: 03, name: "Smallha Marcka", imgName: "shopSmallhaMarcka"),
+                     Shop(id: 03, name: "Minha Marcka", imgName: "shopMinhaMarcka"),
                      Shop(id: 04, name: "Crazy Animes", imgName: "shopCrazyAnimes"),
                      Shop(id: 05, name: "Fenix Rock Club", imgName: "shopFenixRockClub"),
                      Shop(id: 06, name: "Leco's Shouten", imgName: "shopLecosShouten"),

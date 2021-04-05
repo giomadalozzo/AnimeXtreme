@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ScheduleDay: View {
     var scheduleDay: ScheduleInfo
+    @State var clicked = false
     
     var body: some View {
         HStack(spacing: 4) {
@@ -25,15 +26,21 @@ struct ScheduleDay: View {
             
             Spacer()
             
-            NavigationLink (destination: EventList(eventList: events, weekDate: scheduleDay.weekDate, date: scheduleDay.date)){
-                HStack{
-                    Text("Ver Tudo")
-                        .font(.system(size: 16))
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
-                    Image(systemName: "chevron.right").foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0)).font(.system(size: 16))
-                }.ignoresSafeArea()
+            //NavigationLink (destination: EventList(eventList: events, weekDate: scheduleDay.weekDate, date: scheduleDay.date)){
+            HStack{
+                Text("Ver Tudo")
+                    .font(.system(size: 16))
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
+                Image(systemName: "chevron.right").foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0)).font(.system(size: 16))
+            }.ignoresSafeArea()
+            .fullScreenCover(isPresented: $clicked, content: {
+                EventList(eventList: events, weekDate: scheduleDay.weekDate, date: scheduleDay.date)
+            })
+            .onTapGesture {
+                clicked = true
             }
+            //}
         }.padding(.bottom, 27)
         ScrollView(.horizontal){
             HStack(spacing: 14){
@@ -42,7 +49,7 @@ struct ScheduleDay: View {
                 }
             }
         }.padding(.bottom, 38)
-
+        
     }
 }
 
