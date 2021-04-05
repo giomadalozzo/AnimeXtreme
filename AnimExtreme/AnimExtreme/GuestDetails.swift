@@ -10,6 +10,7 @@ import SwiftUI
 struct GuestDetails: View {
     @Environment(\.presentationMode) var presentation
     var guest: Guest
+    @Binding var clicked:Bool
     
     var body: some View {
         ZStack {
@@ -21,6 +22,7 @@ struct GuestDetails: View {
                     .frame(width: 85.0, height: 45.0).padding(.bottom, 34.0).padding(.leading, 22).padding(.top, 26)
                 Button(action: {
                     presentation.wrappedValue.dismiss()
+                    clicked = false
                 }, label: {
                     HStack{
                         Image(systemName: "chevron.left").foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
@@ -41,8 +43,8 @@ struct GuestDetails: View {
     }
 }
 
-struct GuestDetails_Previews: PreviewProvider {
-    static var previews: some View {
-        GuestDetails(guest: guests[0])
-    }
-}
+//struct GuestDetails_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GuestDetails(guest: guests[0])
+//    }
+//}

@@ -18,6 +18,7 @@ struct GuestInfo: View {
             VStack (spacing: 0) {
                 RoundedImage(imageName: guestImg, imgWidth: width, imgHeight: height, imgTl: 20, imgTr: 20, imgBl: 0, imgBr: 0)
                 Text(guest.name)
+                    .fontWeight(.bold)
                     .foregroundColor(Color.init(red: 90/255, green: 237/255, blue: 164/255))
                     .multilineTextAlignment(.center)
                     .frame(width: width, height: 45)
@@ -26,11 +27,23 @@ struct GuestInfo: View {
             }
         }
         .frame(width: width, height: height)
+        
     }
 }
 
-struct GuestInfo_Previews: PreviewProvider {
-    static var previews: some View {
-        GuestInfo(guest: guests[0], guestImg: guests[0].imgSmallName ,width: 158, height: 138)
+struct GuestInfoItem: View {
+    var guest: Guest
+    var guestImg: String
+    var width: CGFloat
+    var height: CGFloat
+    @Binding var clicked: Bool
+    @Binding var selectedGuest: Guest
+    
+    var body: some View {
+        GuestInfo(guest: guest, guestImg: guestImg, width: width, height: height)
+            .fullScreenCover(isPresented: .constant(clicked && (selectedGuest.id == guest.id)), content: {
+                GuestDetails(guest: guest, clicked:$clicked)
+            })
     }
 }
+

@@ -11,6 +11,7 @@ let coloredNavAppearance = UINavigationBarAppearance()
 struct GuestList: View {
     var guestList: [Guest] = guests
     @State var clicked = false
+    @State var selectedGuest: Guest = Guest(id: 0, name: "", info: "", imgSmallName: "", imgBigName: "")
     
     let columns = [
         GridItem(.fixed(158), spacing: 25),
@@ -41,15 +42,12 @@ struct GuestList: View {
                     ScrollView {
                         LazyVGrid(columns: columns, spacing: 10) {
                             ForEach(guestList, id: \.id) { guest in
-                                //NavigationLink (destination: GuestDetails(guest: guest)){
-                                GuestInfo(guest: guest, guestImg: guest.imgSmallName,width: 158, height: 138)
-                                    .padding([.top, .bottom], 37).fullScreenCover(isPresented: $clicked, content: {
-                                        GuestDetails(guest: guest)
-                                    })
+                                GuestInfoItem(guest: guest, guestImg: guest.imgSmallName,width: 158, height: 138, clicked: $clicked, selectedGuest: $selectedGuest)
+                                    .padding([.top, .bottom], 37)
                                     .onTapGesture {
                                         clicked = true
+                                        selectedGuest = guest
                                     }
-                                //  }
                             }
                         }
                     }

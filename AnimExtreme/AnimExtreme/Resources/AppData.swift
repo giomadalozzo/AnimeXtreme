@@ -35,12 +35,12 @@ struct Shop: Identifiable {
     var imgName: String
 }
 var events: [Event] = [(Event(id: 001, name: "Desfile Cosplay", time: "10h", imgName: "desfileCosplay")), (Event(id: 002, name: "Campeonato DXC", time: "14h", imgName: "campeonatoDXC")), (Event(id: 003, name: "Artists' Alley", time: "15h", imgName: "artistsAlley")), (Event(id: 004, name: "Entrevista Bunka Pop", time: "16h", imgName: "entrevistaBunka")), (Event(id: 005, name: "Campeonato Just Dance", time: "18h", imgName: "campeonatoJD"))]
-var guests: [Guest] = [(Guest(id: 001, name: "Mandy Candy", info: "Info about guest", imgSmallName: "mandyCandySmall", imgBigName: "mandyCandyBig")),
-                       (Guest(id: 002, name: "Tio Orochi", info: "Info about guest", imgSmallName: "tioOrochiSmall", imgBigName: "tioOrochiBig")),
-                       (Guest(id: 003, name: "Julio Cocielo", info: "Info about guest", imgSmallName: "julioCocieloSmall", imgBigName: "julioCocieloBig")),
-                       (Guest(id: 004, name: "Kim Rosacuca", info: "Info about guest", imgSmallName: "kimRosacucaSmall", imgBigName: "kimRosacucaBig")),
-                       (Guest(id: 005, name: "Morimura", info: "Info about guest", imgSmallName: "morimuraSmall", imgBigName: "morimuraBig")),
-                       (Guest(id: 006, name: "Luba Tv", info: "Info about guest", imgSmallName: "lubaTVSmall", imgBigName: "lubaTVBig"))]
+var guests: [Guest] = [(Guest(id: 001, name: "Mandy Candy", info: "Amanda Guimarães, mais conhecida na internet como Mnady Candy, é natural de Gravataí, interior do Rio Grande do Sul. A youtuber comanda o canal Mandy Candy, onde compartilha suas experiências com transição de gênero e curiosidades de sua vida.", imgSmallName: "mandyCandySmall", imgBigName: "mandyCandyBig")),
+                       (Guest(id: 002, name: "Tio Orochi", info: "Info about guest", imgSmallName: "tioOrochiSmall", imgBigName: "tioOrochiSmall")),
+                       (Guest(id: 003, name: "Julio Cocielo", info: "Info about guest", imgSmallName: "julioCocieloSmall", imgBigName: "julioCocieloSmall")),
+                       (Guest(id: 004, name: "Kim Rosacuca", info: "Info about guest", imgSmallName: "kimRosacucaSmall", imgBigName: "kimRosacucaSmall")),
+                       (Guest(id: 005, name: "Morimura", info: "Info about guest", imgSmallName: "morimuraSmall", imgBigName: "morimuraSmall")),
+                       (Guest(id: 006, name: "Luba Tv", info: "Info about guest", imgSmallName: "lubaTVSmall", imgBigName: "lubaTVSmall"))]
 var scheduleDays: [ScheduleInfo] = [(ScheduleInfo(id: 001, date: "(16/10)", weekDate: "Sábado")), (ScheduleInfo(id: 002, date: "(17/10)", weekDate: "Domingo"))]
 
 var shops: [Shop] = [Shop(id: 01, name: "Kitten", imgName: "shopKitten"),
