@@ -12,8 +12,8 @@ struct GuestList: View {
     var guestList: [Guest] = guests
     
     let columns = [
-        GridItem(.fixed(158), spacing: 16),
-        GridItem(.fixed(158), spacing: 16)
+        GridItem(.fixed(158), spacing: 25),
+        GridItem(.fixed(158), spacing: 25)
     ]
     
     init(){
@@ -31,18 +31,18 @@ struct GuestList: View {
             ZStack {
                 Color.black
                     .edgesIgnoringSafeArea([.all])
-                VStack(alignment: .leading){
+                VStack(alignment: .leading, spacing: 0){
                     HStack{
                         Image("Logo")
                             .frame(width: 85.0, height: 45.0)
                     }.padding([.top, .bottom], 34.0).padding(.leading, 22)
                     
                     ScrollView {
-                        LazyVGrid(columns: columns, spacing: 14) {
+                        LazyVGrid(columns: columns, spacing: 10) {
                             ForEach(guestList, id: \.id) { guest in
                                 NavigationLink (destination: GuestDetails(guest: guest)){
-                                    GuestInfo(guest: guest, width: 158, height: 183)
-                                        .padding([.leading, .trailing], 20).padding(.bottom, 37)
+                                    GuestInfo(guest: guest, guestImg: guest.imgSmallName,width: 158, height: 138)
+                                        .padding([.top, .bottom], 37)
                                 }
                             }
                         }

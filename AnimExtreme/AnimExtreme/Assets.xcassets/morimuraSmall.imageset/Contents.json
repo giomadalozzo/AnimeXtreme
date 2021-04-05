@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "morimuraSmall.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "tioOrochi.png",
+      "filename" : "morimuraSmall@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "morimuraSmall@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

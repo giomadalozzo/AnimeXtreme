@@ -15,7 +15,7 @@ struct GuestDetails: View {
             Color.black
                 .ignoresSafeArea()
             VStack (alignment: .leading, spacing: 0){
-                GuestInfo(guest: guest, width: 390, height: 330)
+                GuestInfo(guest: guest, guestImg: guest.imgBigName ,width: 390, height: 330)
                     .padding(.bottom, 26)
                 Text(guest.info)
                     .foregroundColor(Color.init(red: 90/255, green: 237/255, blue: 164/255))

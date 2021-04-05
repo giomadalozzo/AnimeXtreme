@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "kimRosacucaSmall.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "julioCocielo.png",
+      "filename" : "kimRosacucaSmall@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "kimRosacucaSmall@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
