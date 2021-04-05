@@ -21,7 +21,7 @@ struct TabBar: View {
                     case .schedule:
                         ScheduleView()
                     case  .shops:
-                        Text("Lojas")
+                        ShopView()
                     case .guests:
                         GuestList()
                     }
@@ -43,6 +43,7 @@ struct TabBar: View {
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
         TabBar(viewRouter: ViewRouter())
+            .previewDevice("iPhone 12")
     }
 }
 
