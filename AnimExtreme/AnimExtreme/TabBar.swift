@@ -31,7 +31,7 @@ struct TabBar: View {
                         TabBarIcon(viewRouter: viewRouter, assignedPage: .shops, systemIconName: "cart", tabName: "Lojas")
                         TabBarIcon(viewRouter: viewRouter, assignedPage: .guests, systemIconName: "star", tabName: "Convidados")
                         
-                    }.frame(width: geometry.size.width, height: 78).background(Color("TabBarBackground"))
+                    }.frame(width: geometry.size.width, height: 90).background(Color("TabBarBackground"))
                 }.edgesIgnoringSafeArea(.all)
             }
         }

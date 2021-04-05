@@ -51,7 +51,6 @@ struct GuestList: View {
             }
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
-            .navigationBarItems(leading: Image("Logo"))
         }
     }
 }
