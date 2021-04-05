@@ -13,21 +13,22 @@ struct ScheduleView: View {
             ZStack{
                 Color.black
                     .ignoresSafeArea()
-                VStack{
                 VStack(alignment: .leading){
                     HStack{
                         Image("Logo")
-                            
                             .frame(width: 85.0, height: 45.0)
-                    }.padding(.bottom, 51.0).padding(.top, 34)
+                    }.padding(.bottom, 34.0).padding(.leading, 22).padding(.top, 81)
+                    VStack(alignment: .leading){
+                        ScrollView(showsIndicators: false){
+                        
+                        
+                        ForEach(scheduleDays, id: \.id) { scheduleDay in
+                            ScheduleDay(scheduleDay: scheduleDay)
+                        }
+                        }
+                        
+                    }.padding(.leading, 22).padding(.trailing, 20).ignoresSafeArea().navigationBarHidden(true).navigationBarTitle("")
                     
-                    ForEach(scheduleDays, id: \.id) { scheduleDay in
-                        ScheduleDay(scheduleDay: scheduleDay)
-                    }
-                    
-                    
-                }.padding(.leading, 22).padding(.trailing, 20).ignoresSafeArea().navigationBarHidden(true).navigationBarTitle("")
-
                 }.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 
             }

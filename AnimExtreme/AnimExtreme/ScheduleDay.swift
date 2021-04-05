@@ -25,7 +25,7 @@ struct ScheduleDay: View {
             
             Spacer()
             
-            NavigationLink (destination: EventList(eventList: events)){
+            NavigationLink (destination: EventList(eventList: events, weekDate: scheduleDay.weekDate, date: scheduleDay.date)){
                 HStack{
                     Text("Ver Tudo")
                         .font(.system(size: 16))

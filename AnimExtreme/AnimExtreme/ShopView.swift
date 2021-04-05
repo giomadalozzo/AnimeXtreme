@@ -13,18 +13,20 @@ struct ShopView: View {
             ZStack{
                 Color.black
                     .ignoresSafeArea()
-                VStack{
                 VStack(alignment: .leading){
                     HStack{
                         Image("Logo")
                             
                             .frame(width: 85.0, height: 45.0)
-                    }.padding(.bottom, 51.0).padding(.top, 34)
+                    }.padding(.bottom, 51.0).padding(.top, 81).padding(.leading, 22)
 
-                    ForEach(shops, id: \.id) { shop in
-                        ShopItem(shop: shop)
+                    
+                VStack(alignment: .leading){
+                    ScrollView{
+                        ForEach(shops, id: \.id) { shop in
+                            ShopItem(shop: shop)
+                        }
                     }
-                   
 
                     
                 }.padding(.leading, 22).padding(.trailing, 20).ignoresSafeArea().navigationBarHidden(true).navigationBarTitle("")
