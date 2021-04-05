@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "scale" : "1x",
+      "filename" : "shopLojadoHeroi.png",
+      "idiom" : "universal"
+    },
+    {
+      "scale" : "2x",
+      "filename" : "shopLojadoHeroi@2x.png",
+      "idiom" : "universal"
+    },
+    {
+      "scale" : "3x",
+      "idiom" : "universal",
+      "filename" : "shopLojadoHeroi@3x.png"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
