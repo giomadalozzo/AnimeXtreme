@@ -64,4 +64,8 @@ struct EventList: View {
     }
 }
 
-
+struct EventList_Previews: PreviewProvider {
+    static var previews: some View {
+        EventList(eventList: events, weekDate: scheduleDays[0].weekDate, date: scheduleDays[0].date)
+    }
+}
