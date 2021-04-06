@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "karaoke.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "artistsAlley.png",
+      "filename" : "componente111@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "componente111@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

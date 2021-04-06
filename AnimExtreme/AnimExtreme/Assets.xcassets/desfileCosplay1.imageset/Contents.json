@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "desfileCosplay.png",
+      "filename" : "desfileCosplay1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "desfileCosplay1@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "desfileCosplay1@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

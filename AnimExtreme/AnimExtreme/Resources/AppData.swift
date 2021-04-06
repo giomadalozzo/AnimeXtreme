@@ -34,7 +34,20 @@ struct Shop: Identifiable {
     var name:String
     var imgName: String
 }
-var events: [Event] = [(Event(id: 001, name: "Desfile Cosplay", time: "10h", imgName: "desfileCosplay")), (Event(id: 002, name: "Campeonato DXC", time: "14h", imgName: "campeonatoDXC")), (Event(id: 003, name: "Artists' Alley", time: "15h", imgName: "artistsAlley")), (Event(id: 004, name: "Entrevista Bunka Pop", time: "16h", imgName: "entrevistaBunka")), (Event(id: 005, name: "Campeonato Just Dance", time: "18h", imgName: "campeonatoJD"))]
+var eventSaturday: [Event] = [(Event(id: 001, name: "Desfile Cosplay", time: "10h", imgName: "desfileCosplay1")),
+                       (Event(id: 002, name: "Campeonato DXC", time: "14h", imgName: "campeonatoDXC")),
+                       (Event(id: 003, name: "Artists' Alley", time: "15h", imgName: "artistsAlley1")),
+                       (Event(id: 004, name: "Entrevista Bunka Pop", time: "16h", imgName: "entrevistaBunka")),
+                       (Event(id: 005, name: "Entrevista Cocielo", time: "17h", imgName: "entrevistaCocielo")),
+                       (Event(id: 006, name: "Campeonato Just Dance", time: "18h", imgName: "campeonatoJD"))]
+
+var eventSunday: [Event] = [Event(id: 007, name: "Show TKJ", time: "14h", imgName: "showTKJ"),
+                            Event(id: 008, name: "Kpop Random Dance", time: "15h", imgName: "kpopDance"),
+                            Event(id: 009, name: "Desfile Cosplay", time: "15h30", imgName: "desfileCosplay2"),
+                            Event(id: 010, name: "Entrevista LubaTV", time: "16h", imgName: "entrevistaLuba"),
+                            Event(id: 011, name: "Karaoke", time: "15h", imgName: "karaoke"),
+                            Event(id: 012, name: "Artists' Alley", time: "18h", imgName: "artistsAlley2")]
+
 var guests: [Guest] = [(Guest(id: 001, name: "Mandy Candy", info: "Amanda Guimarães, mais conhecida na internet como Mnady Candy, é natural de Gravataí, interior do Rio Grande do Sul. A youtuber comanda o canal Mandy Candy, onde compartilha suas experiências com transição de gênero e curiosidades de sua vida.", imgSmallName: "mandyCandySmall", imgBigName: "mandyCandyBig")),
                        (Guest(id: 002, name: "Tio Orochi", info: "Info about guest", imgSmallName: "tioOrochiSmall", imgBigName: "tioOrochiSmall")),
                        (Guest(id: 003, name: "Julio Cocielo", info: "Info about guest", imgSmallName: "julioCocieloSmall", imgBigName: "julioCocieloSmall")),

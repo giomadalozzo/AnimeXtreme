@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "kpopDance.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "kpopDance.png",
+      "filename" : "componente141@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "componente141@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
