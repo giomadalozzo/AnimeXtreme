@@ -11,45 +11,85 @@ struct ScheduleDay: View {
     var scheduleDay: ScheduleInfo
     @State var clicked = false
     
+    @ViewBuilder
     var body: some View {
-        HStack(spacing: 4) {
-            Text(scheduleDay.weekDate)
-                .font(.system(size: 18))
-                .fontWeight(.bold)
-                .foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
-            
-            Text(scheduleDay.date)
-                .font(.system(size: 14))
-                .fontWeight(.regular)
-                .foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
-                .padding(.top, 5)
-            
-            Spacer()
-            
-            //NavigationLink (destination: EventList(eventList: events, weekDate: scheduleDay.weekDate, date: scheduleDay.date)){
-            HStack{
-                Text("Ver Tudo")
-                    .font(.system(size: 16))
+        if scheduleDay.weekDate == "Domingo"{
+            HStack(spacing: 4) {
+                Text(scheduleDay.weekDate)
+                    .font(.system(size: 18))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
+                
+                Text(scheduleDay.date)
+                    .font(.system(size: 14))
                     .fontWeight(.regular)
                     .foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
-                Image(systemName: "chevron.right").foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0)).font(.system(size: 16))
-            }.ignoresSafeArea()
-            .fullScreenCover(isPresented: $clicked, content: {
-                EventList(eventList: events, weekDate: scheduleDay.weekDate, date: scheduleDay.date)
-            })
-            .onTapGesture {
-                clicked = true
-            }
-            //}
-        }.padding(.bottom, 27)
-        ScrollView(.horizontal){
-            HStack(spacing: 14){
-                ForEach(events, id: \.id) { event in
-                    EventInfo(event: event)
+                    .padding(.top, 5)
+                
+                Spacer()
+                
+                //NavigationLink (destination: EventList(eventList: events, weekDate: scheduleDay.weekDate, date: scheduleDay.date)){
+                HStack{
+                    Text("Ver Tudo")
+                        .font(.system(size: 16))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
+                    Image(systemName: "chevron.right").foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0)).font(.system(size: 16))
+                }.ignoresSafeArea()
+                .fullScreenCover(isPresented: $clicked, content: {
+                    EventList(eventList: eventSunday, weekDate: scheduleDay.weekDate, date: scheduleDay.date)
+                })
+                .onTapGesture {
+                    clicked = true
                 }
-            }
-        }.padding(.bottom, 38)
-        
+                //}
+            }.padding(.bottom, 27)
+            ScrollView(.horizontal){
+                HStack(spacing: 14){
+                    ForEach(eventSunday, id: \.id) { event in
+                        EventInfo(event: event)
+                    }
+                }
+            }.padding(.bottom, 38)
+        }else{
+            HStack(spacing: 4) {
+                Text(scheduleDay.weekDate)
+                    .font(.system(size: 18))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
+                
+                Text(scheduleDay.date)
+                    .font(.system(size: 14))
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
+                    .padding(.top, 5)
+                
+                Spacer()
+                
+                //NavigationLink (destination: EventList(eventList: events, weekDate: scheduleDay.weekDate, date: scheduleDay.date)){
+                HStack{
+                    Text("Ver Tudo")
+                        .font(.system(size: 16))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0))
+                    Image(systemName: "chevron.right").foregroundColor(Color(red: 90.0 / 255.0, green: 237.0 / 255.0, blue: 164.0 / 255.0)).font(.system(size: 16))
+                }.ignoresSafeArea()
+                .fullScreenCover(isPresented: $clicked, content: {
+                    EventList(eventList: eventSaturday, weekDate: scheduleDay.weekDate, date: scheduleDay.date)
+                })
+                .onTapGesture {
+                    clicked = true
+                }
+                //}
+            }.padding(.bottom, 27)
+            ScrollView(.horizontal){
+                HStack(spacing: 14){
+                    ForEach(eventSaturday, id: \.id) { event in
+                        EventInfo(event: event)
+                    }
+                }
+            }.padding(.bottom, 38)
+        }
     }
 }
 

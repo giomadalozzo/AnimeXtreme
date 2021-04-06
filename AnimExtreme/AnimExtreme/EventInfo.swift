@@ -28,8 +28,8 @@ struct EventInfo: View {
     }
 }
 
-struct EventInfo_Previews: PreviewProvider {
-    static var previews: some View {
-        EventInfo(event: events[4])
-    }
-}
+//struct EventInfo_Previews: PreviewProvider {
+//    static var previews: some View {
+//        EventInfo(event: events[4])
+//    }
+//}
